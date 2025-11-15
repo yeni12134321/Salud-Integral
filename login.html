@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inicio de Sesión</title>
+</head>
+<body>
+<form action="proceso.php" method="POST">
+
+<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+    <fieldset>
+        <legend>Tabla AND</legend>
+
+        <label for="usuario">Usuario</label>
+        <input id="usuario" name="usuario" type="text" required>
+
+        <label for="contrasena">Contraseña</label>
+        <input id="contrasena" name="contrasena" type="password" required>
+
+        <div>
+            <input type="reset" value="Borrar">
+            <input type="submit" value="Ingresar" name="procesa">
+        </div>
+    </fieldset>
+</form>
+
+</body>
+</html>

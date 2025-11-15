@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="gali1.css">
+<meta charset="UTF-8>
+<body>
+
+<h2 style="text-align:center">Bienestar fisico</h2>
+<li><a href="salup.html">Inicio</a></li>
+
+<div class="fila">
+<div class="columnas">
+<img src="imgi1.jpg" style="width:100%"  onclick="openModal();currentSlide(1)" class="efectol cursor">
+</div>
+<div class="columnas">
+<img src="imgi2.jpg" style="width:100%" onclick="openModal(): currentSlide (2)" class="efectol cursor"> 
+</div>
+<div class="columnas">
+ <img src="imgi3.jpg" style="width:100%" onclick="openModal()/currentSlide(3)" class="efectol cursor">
+</div>
+<div class="columnas"> 
+<img src="imgi4.jpg" style="width:100%" onclick="openModal()rcurrentSlide (4)" class="efectol cursor">
+</div>
+
+
+<div id="migaleria" class="galeria">
+<span class="botoncerrar cursor" onclick="closeModal()">&times;</span>
+<div class="modal-content">
+
+<div class="misImagenes">
+<div class="siguienteimagen">1 / 4</div>
+<img src="imgi1.jpg" style="width:100%">
+</div>
+
+<div class="misImagenes">
+<div class="siguienteimagen">2 / 4</div>
+<img src="imgi2.jpg" style="width:100%">
+</div>
+
+<div class="misImagenes">
+<div class="siguienteimagen">3 / 4</div>
+<img src="imgi3.jpg" style="width:100%">
+</div>
+
+<div class="misImagenes">
+<div class="siguienteimagen">4 / 4</div>
+<img src="imgi4.jpg" style="width:100%">
+</div>
+</div>
+<a class="anterior" onclick="plusSlides(-1)">&#10094;</a>
+<a class="siguiente" onclick="plusSlides(1)">&#10095;</a>
+
+<div class="descripcion">
+    <p id="describe"></p>
+</div>
+
+<div class="columnas">
+    <img class="miniatura cursor" src="imgi1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Realiza un poco de cardio no te hara daño">
+</div>
+
+<div class="columnas">
+    <img class="miniatura cursor" src="imgi2.jpg" style="width:100%" onclick="currentSlide(2)" alt="La yoga te ayudada a relajar tus musculos">
+</div>
+
+<div class="columnas">
+    <img class="miniatura cursor" src="imgi3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Trata de esta rsiempre en movimiento">
+</div>
+
+<div class="columnas">
+    <img class="miniatura cursor" src="imgi4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Recuerda siempre ser positivo">
+</div>
+</div>
+</div>
+
+
+<script src="gal1.js"></script>
+</body>
+</html>

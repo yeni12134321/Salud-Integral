@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Arial", Georgia, serif;
+  font-size: 15px;
+  background-color: #27F53; /* Verde muy claro */
+  padding-top: 70px; 
+  padding-bottom: 50px;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  text-align: center;
+  height: 45px;
+  background: #2e7d32; /* Verde salud */
+  color: white; /* CORREGIDO (antes era un verde que no se veía) */
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+/* MENÚ */
+.menuCSS3 {
+  width: 100%;
+  background-color: #a5d6a7; /* Verde suave */
+  margin-top: 50px;
+}
+
+.menuCSS3 ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.menuCSS3 ul li {
+  position: relative;
+}
+
+.menuCSS3 a {
+  display: block;
+  padding: 1em;
+  background-color: #a5d6a7;
+  text-decoration: none;
+  color: #1b5e20;
+  text-align: center;
+  font-weight: bold;
+  transition: background 0.3s, text-transform 0.3s, color 0.3s;
+}
+
+.menuCSS3 a:hover {
+  background-color: #66bb6a;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* SUBMENÚ */
+.menuCSS3 ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  flex-direction: column;
+  background: #c8e6c9; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 160px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.menuCSS3 ul li:hover ul {
+  display: flex;
+}
+
+/* SLIDER */
+.slider {
+  margin: 40px auto;
+  width: 80%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 60, 0, 0.2);
+  background-color: white;
+}
+
+.slider ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 400%;
+  animation: cambio 15s infinite alternate linear;
+}
+
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* ANIMACIÓN SLIDER */
+@keyframes cambio {
+  0% { margin-left: 0%; }
+  20% { margin-left: 0%; }
+  25% { margin-left: -100%; }
+  45% { margin-left: -100%; }
+  50% { margin-left: -200%; }
+  70% { margin-left: -200%; }
+  75% { margin-left: -300%; }
+  100% { margin-left: -300%; }
+}
+
+/* IMÁGENES GENERALES */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* FOOTER */
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
